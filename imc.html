@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font: 20pt Arial;}
+        button{font-size: 20px; padding: 20px; height: 20px Arial;}
+    </style>    
+</head>
+    <body>
+        <h1>Calcule seu IMC</h1>
+        <button onclick="inicio()">Clique aqui para iniciar</button>
+            <script>
+                function inicio(){
+                    let nome = prompt("Digite seu nome: ");
+                    let idade = prompt("digite sua idade senhor(a) " + nome + ":");
+                    let peso = prompt("digite seu peso senhor(a) " + nome + ":");
+                    let altura = prompt("digite sua altura porfavor senhor(a) " + nome);
+                    let imc = parseInt (peso)/ parseFloat (altura)**2;
+                    alert("Olá senhor(a) " + nome + "! " + " você tem " + idade + " anos " + " e seu peso é " + peso + " sua altura senhor(a) " + nome + " é " + altura + " seu IMC é de " + imc)
+                }
+            
+            </script>
+</body>
+</html>
